@@ -28,10 +28,10 @@ namespace HospitalWinForms
                 return;
             }
 
-            string nombre = txtNombre.Text;
-            string apellido = txtApellido.Text;
-            hospital.CrearPaciente(txtNombre.Text, txtApellido.Text);
-            MessageBox.Show($"Paciente {txtNombre.Text} {txtApellido.Text} creado.");
+            string nombre = txtNombre.Text.Trim();
+            string apellido = txtApellido.Text.Trim();
+            hospital.CrearPaciente(nombre, apellido);
+            MessageBox.Show($"Paciente {nombre} {apellido} creado.");
             txtNombre.Clear();
             txtApellido.Clear();
         }

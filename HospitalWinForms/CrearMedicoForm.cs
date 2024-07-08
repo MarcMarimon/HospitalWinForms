@@ -20,10 +20,10 @@ namespace HospitalWinForms
                 MessageBox.Show("Por favor, complete todos los campos.");
                 return;
             }
-            string nombre = txtNombre.Text;
-            string apellido = txtApellido.Text;
-            hospital.CrearMedico(txtNombre.Text, txtApellido.Text);
-            MessageBox.Show($"Médico {txtNombre.Text} {txtApellido.Text} creado.");
+            string nombre = txtNombre.Text.Trim();
+            string apellido = txtApellido.Text.Trim();
+            hospital.CrearMedico(nombre, apellido);
+            MessageBox.Show($"Médico {nombre} {apellido} creado.");
             txtNombre.Clear();
             txtApellido.Clear();
         }

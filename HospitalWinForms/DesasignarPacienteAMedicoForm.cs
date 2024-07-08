@@ -13,7 +13,7 @@ namespace HospitalWinForms
             InitializeComponent();
             this.hospital = hospital;
             cmbMedicos.DataSource = hospital.Medicos;
-            cmbMedicos.DisplayMember = "Nombre";
+            cmbMedicos.DisplayMember = "NombreCompleto";
         }
 
         private void cmbMedicos_SelectedIndexChanged(object sender, EventArgs e)
@@ -22,7 +22,7 @@ namespace HospitalWinForms
             if (medico != null)
             {
                 lstPacientes.DataSource = medico.Pacientes.ToList();
-                lstPacientes.DisplayMember = "Nombre";
+                lstPacientes.DisplayMember = "NombreCompleto";
             }
         }
 
@@ -34,7 +34,7 @@ namespace HospitalWinForms
             if (medico != null && paciente != null)
             {
                 hospital.DesasignarPacienteDeMedico(medico, paciente);
-                MessageBox.Show($"Paciente {paciente.Nombre} desasignado del medico {medico.Nombre}.");
+                MessageBox.Show($"Paciente {paciente.NombreCompleto} desasignado del medico {medico.NombreCompleto}.");
                 // Actualizar la lista de pacientes
                 lstPacientes.DataSource = medico.Pacientes.ToList();
             }

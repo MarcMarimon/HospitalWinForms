@@ -130,7 +130,11 @@ namespace HospitalWinForms
 
         private bool EsNombreApellidoValido(string texto)
         {
-            return Regex.IsMatch(texto, @"^[a-zA-Z]+$");
+            {
+                texto = texto.Trim();
+
+                return Regex.IsMatch(texto, @"^[a-zA-Z]+(?: [a-zA-Z]+)*$");
+            }
         }
     }
 }

@@ -19,7 +19,6 @@ namespace HospitalWinForms
             InitializeComponent();
             this.hospital = hospital;
 
-            // Llenar ComboBox con los valores del enum Departamento
             cmbDepartamento.DataSource = Enum.GetValues(typeof(Departamento));
         }
 
@@ -37,8 +36,8 @@ namespace HospitalWinForms
                 return;
             }
 
-            string nombre = txtNombre.Text;
-            string apellido = txtApellido.Text;
+            string nombre = txtNombre.Text.Trim();
+            string apellido = txtApellido.Text.Trim();
             Departamento departamento = (Departamento)cmbDepartamento.SelectedItem;
 
             hospital.CrearPersonalAuxiliar(nombre, apellido, departamento);
@@ -50,7 +49,7 @@ namespace HospitalWinForms
         {
             txtNombre.Clear();
             txtApellido.Clear();
-            cmbDepartamento.SelectedIndex = -1;
+            cmbDepartamento.SelectedIndex = 0;
         }
     }
 }

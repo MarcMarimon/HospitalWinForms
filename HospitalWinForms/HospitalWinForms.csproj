@@ -127,6 +127,15 @@
     <EmbeddedResource Include="CrearPersonalAuxiliarForm.resx">
       <DependentUpon>CrearPersonalAuxiliarForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DesasignarPacienteAMedicoForm.resx">
+      <DependentUpon>DesasignarPacienteAMedicoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarForm.resx">
+      <DependentUpon>EliminarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarForm.resx">
+      <DependentUpon>ListarForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -18,12 +18,21 @@ namespace HospitalWinForms
         {
             InitializeComponent();
             hospital = new Hospital();
+            btnCerrarLimpiar.Visible = false;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
         }
-
+        private void btnCerrarLimpiar_Click(object sender, EventArgs e)
+        {
+            LimpiarRightPanel();
+        }
+        private void LimpiarRightPanel()
+        {
+            panelDerecho.Controls.Clear();
+            btnCerrarLimpiar.Visible = false;
+        }
         private void btnCrearMedico_Click(object sender, EventArgs e)
         {
             LoadFormInPanel(new CrearMedicoForm(hospital));
@@ -81,6 +90,12 @@ namespace HospitalWinForms
             // Añadir el formulario al panel y mostrarlo
             this.panelDerecho.Controls.Add(form);
             form.Show();
+            btnCerrarLimpiar.Visible = true;
+        }
+
+        private void MainForm_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

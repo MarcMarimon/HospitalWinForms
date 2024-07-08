@@ -45,5 +45,10 @@ namespace HospitalWinForms
                 MessageBox.Show($"Error: {ex.Message}");
             }
         }
+
+        private void VerMedicosDePacienteForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

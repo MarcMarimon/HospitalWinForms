@@ -16,6 +16,7 @@
         private void InitializeComponent()
         {
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.btnCerrarLimpiar = new System.Windows.Forms.Button();
             this.panelIzquierdo = new System.Windows.Forms.Panel();
             this.btnCrearMedico = new System.Windows.Forms.Button();
             this.btnCrearPaciente = new System.Windows.Forms.Button();
@@ -40,8 +41,22 @@
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Hospital Manager";
             // 
+            // btnCerrarLimpiar
+            // 
+            this.btnCerrarLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrarLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrarLimpiar.Location = new System.Drawing.Point(1059, 36);
+            this.btnCerrarLimpiar.Name = "btnCerrarLimpiar";
+            this.btnCerrarLimpiar.Size = new System.Drawing.Size(121, 38);
+            this.btnCerrarLimpiar.TabIndex = 1;
+            this.btnCerrarLimpiar.Text = "Cerrar";
+            this.btnCerrarLimpiar.UseVisualStyleBackColor = true;
+            this.btnCerrarLimpiar.Click += new System.EventHandler(this.btnCerrarLimpiar_Click);
+            // 
             // panelIzquierdo
             // 
+            this.panelIzquierdo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panelIzquierdo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelIzquierdo.Controls.Add(this.btnCrearMedico);
             this.panelIzquierdo.Controls.Add(this.btnCrearPaciente);
@@ -54,11 +69,12 @@
             this.panelIzquierdo.Controls.Add(this.btnEliminar);
             this.panelIzquierdo.Location = new System.Drawing.Point(13, 80);
             this.panelIzquierdo.Name = "panelIzquierdo";
-            this.panelIzquierdo.Size = new System.Drawing.Size(250, 569);
+            this.panelIzquierdo.Size = new System.Drawing.Size(250, 545);
             this.panelIzquierdo.TabIndex = 1;
             // 
             // btnCrearMedico
             // 
+            this.btnCrearMedico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCrearMedico.Location = new System.Drawing.Point(15, 15);
             this.btnCrearMedico.Name = "btnCrearMedico";
             this.btnCrearMedico.Size = new System.Drawing.Size(220, 50);
@@ -69,6 +85,7 @@
             // 
             // btnCrearPaciente
             // 
+            this.btnCrearPaciente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCrearPaciente.Location = new System.Drawing.Point(15, 75);
             this.btnCrearPaciente.Name = "btnCrearPaciente";
             this.btnCrearPaciente.Size = new System.Drawing.Size(220, 50);
@@ -79,6 +96,7 @@
             // 
             // btnCrearPersonalAuxiliar
             // 
+            this.btnCrearPersonalAuxiliar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCrearPersonalAuxiliar.Location = new System.Drawing.Point(15, 135);
             this.btnCrearPersonalAuxiliar.Name = "btnCrearPersonalAuxiliar";
             this.btnCrearPersonalAuxiliar.Size = new System.Drawing.Size(220, 50);
@@ -89,6 +107,7 @@
             // 
             // btnAsignarPacienteAMedico
             // 
+            this.btnAsignarPacienteAMedico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAsignarPacienteAMedico.Location = new System.Drawing.Point(15, 195);
             this.btnAsignarPacienteAMedico.Name = "btnAsignarPacienteAMedico";
             this.btnAsignarPacienteAMedico.Size = new System.Drawing.Size(220, 50);
@@ -99,6 +118,7 @@
             // 
             // btnDesasignarPacienteAMedico
             // 
+            this.btnDesasignarPacienteAMedico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDesasignarPacienteAMedico.Location = new System.Drawing.Point(15, 255);
             this.btnDesasignarPacienteAMedico.Name = "btnDesasignarPacienteAMedico";
             this.btnDesasignarPacienteAMedico.Size = new System.Drawing.Size(220, 50);
@@ -109,6 +129,7 @@
             // 
             // btnVerPacientesDeMedico
             // 
+            this.btnVerPacientesDeMedico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVerPacientesDeMedico.Location = new System.Drawing.Point(15, 315);
             this.btnVerPacientesDeMedico.Name = "btnVerPacientesDeMedico";
             this.btnVerPacientesDeMedico.Size = new System.Drawing.Size(220, 50);
@@ -119,6 +140,7 @@
             // 
             // btnVerMedicosDePaciente
             // 
+            this.btnVerMedicosDePaciente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVerMedicosDePaciente.Location = new System.Drawing.Point(15, 375);
             this.btnVerMedicosDePaciente.Name = "btnVerMedicosDePaciente";
             this.btnVerMedicosDePaciente.Size = new System.Drawing.Size(220, 50);
@@ -129,6 +151,7 @@
             // 
             // btnListar
             // 
+            this.btnListar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnListar.Location = new System.Drawing.Point(15, 435);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(220, 50);
@@ -139,6 +162,7 @@
             // 
             // btnEliminar
             // 
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminar.Location = new System.Drawing.Point(15, 495);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(220, 50);
@@ -149,22 +173,27 @@
             // 
             // panelDerecho
             // 
+            this.panelDerecho.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelDerecho.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelDerecho.Location = new System.Drawing.Point(270, 80);
             this.panelDerecho.Name = "panelDerecho";
-            this.panelDerecho.Size = new System.Drawing.Size(700, 569);
+            this.panelDerecho.Size = new System.Drawing.Size(910, 545);
             this.panelDerecho.TabIndex = 2;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 661);
+            this.ClientSize = new System.Drawing.Size(1194, 637);
             this.Controls.Add(this.panelDerecho);
             this.Controls.Add(this.panelIzquierdo);
             this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.btnCerrarLimpiar);
             this.Name = "MainForm";
             this.Text = "Gestión Hospitalaria";
+            this.Load += new System.EventHandler(this.MainForm_Load_1);
             this.panelIzquierdo.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -172,6 +201,7 @@
         }
 
         private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Button btnCerrarLimpiar;
         private System.Windows.Forms.Panel panelIzquierdo;
         private System.Windows.Forms.Button btnCrearMedico;
         private System.Windows.Forms.Button btnCrearPaciente;
